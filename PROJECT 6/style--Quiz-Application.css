@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: linear-gradient(to bottom right, #f0f4f8, #d9e8ff); 
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.container h1 {
+  margin-bottom: 30px;
+  color: #1e3a8a; 
+  font-size: 2.5rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-box {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  border-radius: 20px; 
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); 
+  padding: 20px;
+  transition: transform 0.2s;
+}
+
+.quiz-box:hover {
+  transform: translateY(-3px); 
+}
+
+.quiz-box .question-box {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.quiz-box .question-box h1 {
+  font-size: 1.6rem; 
+  font-weight: 600;
+  color: #111827; 
+}
+
+.quiz-box .answer-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.answer-box .input-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px; 
+}
+
+.answer-box label {
+  cursor: pointer;
+  width: 100%;
+  padding: 10px;
+  background-color: #e2e8f0; 
+  border-radius: 10px;
+  color: #374151; 
+  transition: background-color 0.3s, box-shadow 0.2s;
+}
+
+.answer-box label:hover {
+  background-color: #cbd5e1; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.answer-box .input-box input {
+  margin-right: 12px;
+  transform: scale(1.2);
+}
+
+.quiz-box .buton-box {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; 
+}
+
+.buton-box button {
+  width: 130px;
+  height: 45px;
+  border: none;
+  background-color: #1e3a8a; 
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 10px; 
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.buton-box button:hover {
+  background-color:#375296;
+  transform: translateY(-2px); 
+}
+
+.buton-box button:active {
+  transform: translateY(1px); 
+}
+
